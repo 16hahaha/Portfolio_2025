@@ -126,16 +126,19 @@
 						  
 							  <pre style="background-color: #f4f4f4; padding: 1em; border-radius: 8px; overflow-x: auto; font-family: 'Courier New', monospace;">
 project-root/
-├── images            # アプリケーションのエントリーポイント
-├── sounds         # 各種設定値（APIキーやパスなど）
-├── scenes
-│   ├── __init__.py
-│   ├── temperature.py # 温度センサーの読み取り処理
-│   └── gps.py         # GPSモジュールのデータ取得処理
-├── utils/
-│   ├── logger.py      # ログ出力用ユーティリティ
-│   └── converter.py   # 座標変換や温度計算の補助関数
-└── README.md          # システム概要・セットアップ手順
+├── images/               # ゲーム内で使用する画像リソースを格納
+├── sounds/               # ゲーム内で使用するサウンド（効果音やBGM）を格納
+├── scenes/
+│   ├── base.py           # シーン共通の基本クラス（継承元）を定義
+│   ├── ending.py         # ゲーム終了時の演出や処理を定義
+│   └── gameover.py       # ゲームオーバー時の表示や処理を定義
+│           ︙
+├── bullet.rb             # 弾の挙動や当たり判定を管理するクラス
+├── enemy.rb              # 敵キャラクターの挙動や状態を管理するクラス
+├── ememyspawner.rb       # 敵の出現管理処理を行うクラス
+├── levelmanager.rb       # ステージや難易度の進行管理を行うクラス
+├── player.rb             # プレイヤーキャラクターの動作や状態を管理するクラス
+└── main.rb               # アプリケーションのエントリーポイント（初期化・起動処理）
 							  </pre>
 							  <a href="https://github.com/16hahaha/Recycling_Odyssey" target="_blank" class="github-button">
 								ソースコードはこちら

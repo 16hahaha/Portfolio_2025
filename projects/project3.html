@@ -46,82 +46,171 @@
 						<!-- One -->
 							<section id="one">
 								<div class="image main" data-position="center">
-									<img src="../images/Pro2_1.jpg" alt="" />
+Pro3_edit
+									<img src="../images/Pro3_1.jpg" alt="" />
+
 								</div>
-								<div class="container">
+								<style>
+									.flex-container {
+									  display: flex;
+									  align-items: center; /* 垂直方向の中央揃え */
+									  gap: 20px; /* 画像とテキストの間隔 */
+									}
+								  
+									.flex-container img {
+									  width: 300px; /* 画像サイズ調整（必要に応じて変更） */
+									  height: auto;
+									  border-radius: 10px; /* 角丸が必要なら追加 */
+									}
+								  
+									.text-content {
+									  max-width: 600px; /* テキストの最大幅（任意） */
+									}
+								  </style>
+								  
+								  <div class="container">
 									<header class="major">
-										<h2>Project2</h2>
-										<h3>Overview</h3>
+									  <h2>Project2</h2>
+									  <h3>Overview</h3>
 									</header>
-									<p>RubyおよびDXRubyライブラリを用いてチームで課題解決に取り組むRuby合宿2024春に参加し、2Dシューティングゲームの作成を行いました。
-										作成したゲーム「リサイクルオデッセイ」は、未就学児や海外からの留学生にとって難しいとされるゴミの分別を楽しく学べることを目的としています。
-										チームには中国からの留学生が在籍しており、開発やディスカッションは英語で行いました。</p>
-								</div>
+								  
+									<div class="flex-container">
+									  <img src="../images/avatar.jpg" alt="Project image">
+									  
+									  <div class="text-content">
+										<p>
+											近年、外壁劣化調査では、ドローンに赤外線カメラを搭載して表面温度を測定し、
+											温度差から劣化部を推定する手法が一般化している。こうした調査を効率的に行うには、
+											壁面ごとの温度変化の傾向を事前に把握し、適切な測定時期を見極める必要がある。
+											現在は汎用の温度センサが使われているが、壁面温度の測定に最適化されておらず、
+											遠隔地でのデータ取得ができないという課題がある。そこで本研究では、
+											建物の壁面温度を計測し、遠距離無線通信によりデータを送信できるモジュールを開発している。
+										</p>
+									  </div>
+									</div>
+								  </div>
 							</section>
 
 						<!-- Two -->
-							<section id="two">
-								<div class="container">
-									<h3>Tools / Environment</h3>
-									<p>開発・環境および利用したツールについて</p>
-									<style>
-										.profile {
-										  display: table;
-										}
-										.profile li {
-										  display: table-row;
-										}
-										.profile span.label {
-										  display: table-cell;
-										  padding-right: 1em;
-										  text-align: right;
-										  white-space: nowrap;
-										}
-										.profile span.value {
-										  display: table-cell;
-										}
-									  </style>
-									  
-									  <ul class="profile">
-										<li> OS:</span><span class="value">Windows 11 Home 64bit</span></li>
-										<li> Ruby:</span><span class="value">3.0.3(via RubyInstaller)</span></li>
-										<li> DXRuby:</span><span class="value">1.4.7</span></li>
-										<li> エディタ:</span><span class="value">Visual Studio Code	</span></li>
-										<li> Github:</span><span class="value">ソースコードの共有およびバージョン管理で使用</span></li>
-									  </ul>
-								</div>
-							</section>
+						<section id="two">
+							<div class="container">
+								<h3>Skills</h3>
+								<p>開発で用いたツール・環境</p>
+								<ul class="feature-icons">
+								  <li class="icon solid fa-microchip">
+									<strong>マイコン・開発環境</strong><br>
+									STM32L082<br>
+									STM32CubeIDE1.16.0(C/C++)
+								  </li>
+								  
+								  <li class="icon solid fa-lightbulb">
+									<strong>回路・基板設計</strong><br>
+									Eagle9.6.2<br>
+									KiCAD9.0
+								  </li>
+								</ul>
+							</div>
+						</section>
+
 
 						<!-- Three -->
 						<section id="three">
 							<div class="container">
-								<h3>Demonstration</h3>
-								<p>実際のプレイ動画です。</p>
-						
-								<div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center;">
-									<!-- 左側：動画 -->
-									<iframe width="480" height="270" 
-									src="https://www.youtube.com/embed/mxXNxKfnh54" 
-									title="YouTube video player" frameborder="0" 
-									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-									allowfullscreen
-									style="flex: 1; min-width: 300px;">
-								  </iframe>
-						
-									<!-- 右側：説明文（水平方向も調整） -->
-									<div style="flex: 1; min-width: 300px; display: flex; align-items: center;">
-										<div style="margin-left: 30px;"> <!-- ← 左余白追加 -->
-											<h5 style="margin-top: 0;">操作方法</h5>
-											<p>
-												Z: 弾1（燃えるゴミ袋）を発射<br>
-												X: 弾2（燃えないゴミ袋）を発射<br>
-												降ってくるゴミを正確に撃ち落とそう！<br>
-												スコアによってエンディングが変化します<br>
-												動画は最高スコアのエンディングです
-											</p>
+								<h3>Product/Result</h3>
+								<p>製作したモジュールの外形およびデータ収集の結果です。</p>
+								<style>
+									/* モーダルの背景 */
+									.modal {
+									  display: none; 
+									  position: fixed; 
+									  z-index: 1000; 
+									  left: 0; top: 0; width: 100%; height: 100%; 
+									  overflow: auto; 
+									  background-color: rgba(0,0,0,0.8); 
+									}
+								  
+									/* モーダル画像（中央に完全配置） */
+									.modal-content {
+									  position: absolute;
+									  top: 50%;
+									  left: 50%;
+									  transform: translate(-50%, -50%);
+									  max-width: 90%;
+									  max-height: 80vh;
+									  border-radius: 8px;
+									}
+								  
+									/* 閉じるボタン */
+									.close {
+									  position: absolute;
+									  top: 30px; right: 30px;
+									  color: white;
+									  font-size: 30px;
+									  font-weight: bold;
+									  cursor: pointer;
+									  user-select: none;
+									}
+								  </style>
+								  
+								  
+								  <div class="features">
+									<article>
+									  <a href="#" class="image modal-trigger">
+										<img src="../images/pic01.jpg" alt="LED行燈" />
+									  </a>
+									  <div class="inner">
+										<h5>モジュールの外形</h5>
+										<p>回路・基板設計ののち部品の実装を行いました。
+											寸法はooxooxoommで電池による駆動が可能です。
+										</p>
+									  </div>
+									</article>
+									<article>
+										<a href="#" class="image modal-trigger">
+										  <img src="../images/pic02.jpg" alt="温度測定実験の結果" />
+										</a>
+										<div class="inner">
+										  <h5>温度測定実験の結果</h5>
+										  <p>測定結果をSoracomHarvestに送信し測定地点の
+											位置情報および温度を送信出来ている事を確認しました。
+										  </p>
 										</div>
-									</div>
-								</div>
+									  </article>
+								  </div>
+								  
+								  <!-- モーダル本体 -->
+								  <div id="modal" class="modal">
+									<span class="close">&times;</span>
+									<img class="modal-content" id="modal-img" />
+								  </div>
+								  
+								  <script>
+									// 画像クリック時にモーダル表示
+									document.querySelectorAll('.modal-trigger img').forEach(img => {
+									  img.addEventListener('click', function(e) {
+										e.preventDefault();
+										const modal = document.getElementById('modal');
+										const modalImg = document.getElementById('modal-img');
+										modal.style.display = "block";
+										modalImg.src = this.src;  // クリックした画像のsrcをセット
+										modalImg.alt = this.alt;
+									  });
+									});
+								  
+									// モーダルの閉じるボタン
+									document.querySelector('.close').addEventListener('click', function() {
+									  document.getElementById('modal').style.display = "none";
+									});
+								  
+									// モーダルの外側クリックでも閉じる
+									document.getElementById('modal').addEventListener('click', function(e) {
+									  if (e.target === this) {
+										this.style.display = "none";
+									  }
+									});
+								  </script>
+
+
 							</div>
 						</section>
 

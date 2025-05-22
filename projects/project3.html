@@ -23,10 +23,11 @@
 			</header>
 			<nav id="nav">
 				<ul>
-					<li><a href="#one" class="active">About Me</a></li>
-					<li><a href="#two">Background</a></li>
-					<li><a href="#three">Skills</a></li>
-					<li><a href="#four">Projects</a></li>
+					<li><a href="#one" class="active">Overview</a></li>
+					<li><a href="#two">Tools / Environment</a></li>
+					<li><a href="#three">Demonstration</a></li>
+					<li><a href="#four">Code Structure</a></li>
+					<li><a href="#five">Conclusion</a></li>
 				</ul>
 			</nav>
 			<footer>
@@ -45,86 +46,131 @@
 						<!-- One -->
 							<section id="one">
 								<div class="image main" data-position="center">
-									<img src="images/banner.jpg" alt="" />
+									<img src="../images/Pro2_1.jpg" alt="" />
 								</div>
 								<div class="container">
 									<header class="major">
-										<h2>Read Only</h2>
-										<p>Just an incredibly simple responsive site<br />
-										template freebie by <a href="http://html5up.net">HTML5 UP</a>.</p>
+										<h2>Project2</h2>
+										<h3>Overview</h3>
 									</header>
-									<p>Faucibus sed lobortis aliquam lorem blandit. Lorem eu nunc metus col. Commodo id in arcu ante lorem ipsum sed accumsan erat praesent faucibus commodo ac mi lacus. Adipiscing mi ac commodo. Vis aliquet tortor ultricies non ante erat nunc integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum.</p>
+									<p>RubyおよびDXRubyライブラリを用いてチームで課題解決に取り組むRuby合宿2024春に参加し、2Dシューティングゲームの作成を行いました。
+										作成したゲーム「リサイクルオデッセイ」は、未就学児や海外からの留学生にとって難しいとされるゴミの分別を楽しく学べることを目的としています。
+										チームには中国からの留学生が在籍しており、開発やディスカッションは英語で行いました。</p>
 								</div>
 							</section>
 
 						<!-- Two -->
 							<section id="two">
 								<div class="container">
-									<h3>Things I Can Do</h3>
-									<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer lorem ipsum dolor sit amet.</p>
-									<ul class="feature-icons">
-										<li class="icon solid fa-code">Write all the code</li>
-										<li class="icon solid fa-cubes">Stack small boxes</li>
-										<li class="icon solid fa-book">Read books and stuff</li>
-										<li class="icon solid fa-coffee">Drink much coffee</li>
-										<li class="icon solid fa-bolt">Lightning bolt</li>
-										<li class="icon solid fa-users">Shadow clone technique</li>
-									</ul>
+									<h3>Tools / Environment</h3>
+									<p>開発・環境および利用したツールについて</p>
+									<style>
+										.profile {
+										  display: table;
+										}
+										.profile li {
+										  display: table-row;
+										}
+										.profile span.label {
+										  display: table-cell;
+										  padding-right: 1em;
+										  text-align: right;
+										  white-space: nowrap;
+										}
+										.profile span.value {
+										  display: table-cell;
+										}
+									  </style>
+									  
+									  <ul class="profile">
+										<li> OS:</span><span class="value">Windows 11 Home 64bit</span></li>
+										<li> Ruby:</span><span class="value">3.0.3(via RubyInstaller)</span></li>
+										<li> DXRuby:</span><span class="value">1.4.7</span></li>
+										<li> エディタ:</span><span class="value">Visual Studio Code	</span></li>
+										<li> Github:</span><span class="value">ソースコードの共有およびバージョン管理で使用</span></li>
+									  </ul>
 								</div>
 							</section>
 
 						<!-- Three -->
-							<section id="three">
-								<div class="container">
-									<h3>A Few Accomplishments</h3>
-									<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
-									<div class="features">
-										<article>
-											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-											<div class="inner">
-												<h4>Possibly broke spacetime</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
-											</div>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
-											<div class="inner">
-												<h4>Terraformed a small moon</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
-											</div>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
-											<div class="inner">
-												<h4>Snapped dark matter in the wild</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
-											</div>
-										</article>
+						<section id="three">
+							<div class="container">
+								<h3>Demonstration</h3>
+								<p>実際のプレイ動画です。</p>
+						
+								<div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center;">
+									<!-- 左側：動画 -->
+									<iframe width="480" height="270" 
+									src="https://www.youtube.com/embed/mxXNxKfnh54" 
+									title="YouTube video player" frameborder="0" 
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+									allowfullscreen
+									style="flex: 1; min-width: 300px;">
+								  </iframe>
+						
+									<!-- 右側：説明文（水平方向も調整） -->
+									<div style="flex: 1; min-width: 300px; display: flex; align-items: center;">
+										<div style="margin-left: 30px;"> <!-- ← 左余白追加 -->
+											<h5 style="margin-top: 0;">操作方法</h5>
+											<p>
+												Z: 弾1（燃えるゴミ袋）を発射<br>
+												X: 弾2（燃えないゴミ袋）を発射<br>
+												降ってくるゴミを正確に撃ち落とそう！<br>
+												スコアによってエンディングが変化します<br>
+												動画は最高スコアのエンディングです
+											</p>
+										</div>
 									</div>
 								</div>
-							</section>
+							</div>
+						</section>
 
-						<!-- Four -->
-							<section id="four">
-								<div class="container">
-									<h3>Contact Me</h3>
-									<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
-									<form method="post" action="#">
-										<div class="row gtr-uniform">
-											<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-											<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-											<div class="col-12"><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
-											<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
-											<div class="col-12">
-												<ul class="actions">
-													<li><input type="submit" class="primary" value="Send Message" /></li>
-													<li><input type="reset" value="Reset Form" /></li>
-												</ul>
-											</div>
-										</div>
-									</form>
-								</div>
-							</section>
+						<section id="four">
+							<div class="container">
+							  <h3>Code Structure</h3>
+							  <p>ゲームのソースコード構成について簡単に説明します。</p>
+						  
+							  <pre style="background-color: #f4f4f4; padding: 1em; border-radius: 8px; overflow-x: auto; font-family: 'Courier New', monospace;">
+project-root/
+├── images/               # ゲーム内で使用する画像リソースを格納
+├── sounds/               # ゲーム内で使用するサウンド（効果音やBGM）を格納
+├── scenes/
+│   ├── base.rb           # シーン共通の基本クラス（継承元）を定義
+│   ├── ending.rb         # ゲーム終了時の演出や処理を定義
+│   └── gameover.rb       # ゲームオーバー時の表示や処理を定義
+│           ︙
+├── bullet.rb             # 弾の挙動や当たり判定を管理するクラス
+├── enemy.rb              # 敵キャラクターの挙動や状態を管理するクラス
+├── ememyspawner.rb       # 敵の出現管理処理を行うクラス
+├── levelmanager.rb       # ステージや難易度の進行管理を行うクラス
+├── player.rb             # プレイヤーキャラクターの動作や状態を管理するクラス
+└── main.rb               # アプリケーションのエントリーポイント（初期化・起動処理）
+							  </pre>
+							  <a href="https://github.com/16hahaha/Recycling_Odyssey" target="_blank">
+								ソースコードはこちら
+							  </a>
+							</div>
+						</section>
+
+						<!-- five -->
+						<section id="five">
+							<div class="container">
+								<header class="major">
+									<h3>Conclusion</h3>
+								</header>
+								<p>本合宿でのチーム開発にはチームリーダーとして参加した。参加の目的であったRubyおよびDXRubyライブラリを用いたゲームを作成することが達成できた。またプロジェクトを進めるにあたりGithubを用いたバージョン管理についても学習することができた。英語でのディスカッション、開発の経験も積むことができたので非常に実りのある合宿となった。<br>
+									一方作品に目を向けると現段階では様々な改良の余地がある。例えばゴミの種類を増やしたり地区町村によって異なるゴミの分別やゴミ袋の色を学べるような仕組みを取り入れる事が挙げられる。
+									また留学生向けのUIとして多言語向けに改良するなども課題として挙げられる。今後UI、レベルデザインなどの改良に取り組みたい。
+								</p>
+								<a href="https://www.rubycamp.jp/reports/2024-03-09-2024-spring/" target="_blank">
+									Ruby合宿公式サイトはこちら
+								  </a>
+								</p>
+								<a href="../index.html" target="_blank">
+									<h6>Next>Home画面へ</h6>
+								  </a>
+							</div>
+						</section>
 
 						<!-- Five -->
 						<!--

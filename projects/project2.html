@@ -99,10 +99,13 @@
 						
 								<div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center;">
 									<!-- 左側：動画 -->
-									<video width="480" controls style="flex: 1; min-width: 300px;">
-										<source src="../movies/Game_Play.mp4" type="video/mp4">
-										Your browser does not support the video tag.
-									</video>
+									<iframe width="480" height="270" 
+									src="https://www.youtube.com/embed/EnFMEc7wC1Y" 
+									title="YouTube video player" frameborder="0" 
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+									allowfullscreen
+									style="flex: 1; min-width: 300px;">
+								  </iframe>
 						
 									<!-- 右側：説明文（水平方向も調整） -->
 									<div style="flex: 1; min-width: 300px; display: flex; align-items: center;">
@@ -111,7 +114,7 @@
 											<p>
 												Z: 弾1（燃えるゴミ袋）を発射<br>
 												X: 弾2（燃えないゴミ袋）を発射<br>
-												降ってくるゴミを分別して正確に撃ち落とそう！
+												降ってくるゴミを正確に撃ち落とそう！
 											</p>
 										</div>
 									</div>
@@ -129,9 +132,9 @@ project-root/
 ├── images/               # ゲーム内で使用する画像リソースを格納
 ├── sounds/               # ゲーム内で使用するサウンド（効果音やBGM）を格納
 ├── scenes/
-│   ├── base.py           # シーン共通の基本クラス（継承元）を定義
-│   ├── ending.py         # ゲーム終了時の演出や処理を定義
-│   └── gameover.py       # ゲームオーバー時の表示や処理を定義
+│   ├── base.rb           # シーン共通の基本クラス（継承元）を定義
+│   ├── ending.rb         # ゲーム終了時の演出や処理を定義
+│   └── gameover.rb       # ゲームオーバー時の表示や処理を定義
 │           ︙
 ├── bullet.rb             # 弾の挙動や当たり判定を管理するクラス
 ├── enemy.rb              # 敵キャラクターの挙動や状態を管理するクラス

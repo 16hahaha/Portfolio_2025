@@ -1,12 +1,8 @@
 <!DOCTYPE HTML>
-<!--
-	Read Only by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
 	<head>
-		<title>Read Only by HTML5 UP</title>
+		<title>Portfolio_Ver202505</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
@@ -24,9 +20,9 @@
 			<nav id="nav">
 				<ul>
 					<li><a href="#one" class="active">Overview</a></li>
-					<li><a href="#two">Tools / Environment</a></li>
+					<li><a href="#two">Tools / Devices</a></li>
 					<li><a href="#three">Demonstration</a></li>
-					<li><a href="#four">Code Structure</a></li>
+					<li><a href="#four">System</a></li>
 					<li><a href="#five">Conclusion</a></li>
 				</ul>
 			</nav>
@@ -46,57 +42,59 @@
 						<!-- One -->
 							<section id="one">
 								<div class="image main" data-position="center">
-									<img src="../images/Pro2_1.jpg" alt="" />
+									<img src="../images/Pro1_1.jpg" alt="" />
 								</div>
 								<div class="container">
 									<header class="major">
-										<h2>Project2</h2>
+										<h2>project1</h2>
 										<h3>Overview</h3>
 									</header>
-									<p>RubyおよびDXRubyライブラリを用いてチームで課題解決に取り組むRuby合宿2024春に参加し、2Dシューティングゲームの作成を行いました。
-										作成したゲーム「リサイクルオデッセイ」は、未就学児や海外からの留学生にとって難しいとされるゴミの分別を楽しく学べることを目的としています。
-										チームには中国からの留学生が在籍しており、開発やディスカッションは英語で行いました。</p>
+									<p>松江市で毎年開催される「松江水燈路（まつえすいとうろ）」は、国宝松江城の周囲をライトアップする
+										秋の風物詩のイベントです。本プロジェクトでは、この水燈路にて「触れると感知して光るLED行燈」
+										の展示物を制作しました。幅広い年代の来場者が訪れるため、安全面に配慮しつつ、
+										誰もが楽しめる体験型の展示を目指しました。
+										また、周囲の景観を損なわないよう、光の演出にも工夫しています。
+									</p>
 								</div>
 							</section>
 
 						<!-- Two -->
-							<section id="two">
-								<div class="container">
-									<h3>Tools / Environment</h3>
-									<p>開発・環境および利用したツールについて</p>
-									<style>
-										.profile {
-										  display: table;
-										}
-										.profile li {
-										  display: table-row;
-										}
-										.profile span.label {
-										  display: table-cell;
-										  padding-right: 1em;
-										  text-align: right;
-										  white-space: nowrap;
-										}
-										.profile span.value {
-										  display: table-cell;
-										}
-									  </style>
-									  
-									  <ul class="profile">
-										<li> OS:</span><span class="value">Windows 11 Home 64bit</span></li>
-										<li> Ruby:</span><span class="value">3.0.3(via RubyInstaller)</span></li>
-										<li> DXRuby:</span><span class="value">1.4.7</span></li>
-										<li> エディタ:</span><span class="value">Visual Studio Code	</span></li>
-										<li> Github:</span><span class="value">ソースコードの共有およびバージョン管理で使用</span></li>
-									  </ul>
-								</div>
-							</section>
+						<section id="two">
+							<div class="container">
+								<h3>Tools / Devices</h3>
+								<p>使用した部品、ツールを紹介します。</p>
+								<style>
+									.profile {
+										display: table;
+									}
+									.profile li {
+										display: table-row;
+									}
+									.profile span.label {
+										display: table-cell;
+										padding-right: 1em;
+										text-align: right;
+										white-space: nowrap;
+									}
+									.profile span.value {
+										display: table-cell;
+									}
+								</style>
 
+								<ul class="profile">
+									<li><span class="label">LED  :</span><span class="value">フルカラーシリアルLED　NeoPixel(WS2812B)</span></li>
+									<li><span class="label">センサ  :</span><span class="value">3軸加速度センサ　(KXTC9-2050-FR)</span></li>
+									<li><span class="label">マイコン  :</span><span class="value">ESP32マイコンボード</span></li>
+									<li><span class="label">開発環境  :</span><span class="value">Arduino IDE</span></li>
+									<li><span class="label">回路設計  :</span><span class="value">EAGLE9.6.0、回路設計基板の設計に使用</span></li>
+								</ul>
+							</div>
+						</section>
 						<!-- Three -->
 						<section id="three">
 							<div class="container">
 								<h3>Demonstration</h3>
-								<p>実際のプレイ動画です。</p>
+								<p>展示物の動作の様子です。</p>
 						
 								<div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center;">
 									<!-- 左側：動画 -->
@@ -113,11 +111,10 @@
 										<div style="margin-left: 30px;"> <!-- ← 左余白追加 -->
 											<h5 style="margin-top: 0;">操作方法</h5>
 											<p>
-												Z: 弾1（燃えるゴミ袋）を発射<br>
-												X: 弾2（燃えないゴミ袋）を発射<br>
-												降ってくるゴミを正確に撃ち落とそう！<br>
-												スコアによってエンディングが変化します<br>
-												動画は最高スコアのエンディングです
+												来場者は大きな行燈を叩くことで光り方が変化する様子を見ることができます。
+												行燈を叩く方向によって変化するようになっており、子供でも楽しめるよう、
+												センサは上部と下部に設置してあります。
+												光り方は6種類あり、ごくまれにハートが表示されるパターンも存在しています。
 											</p>
 										</div>
 									</div>
@@ -125,30 +122,110 @@
 							</div>
 						</section>
 
+						<!-- Four -->
 						<section id="four">
 							<div class="container">
-							  <h3>Code Structure</h3>
-							  <p>ゲームのソースコード構成について簡単に説明します。</p>
-						  
-							  <pre style="background-color: #f4f4f4; padding: 1em; border-radius: 8px; overflow-x: auto; font-family: 'Courier New', monospace;">
-project-root/
-├── images/               # ゲーム内で使用する画像リソースを格納
-├── sounds/               # ゲーム内で使用するサウンド（効果音やBGM）を格納
-├── scenes/
-│   ├── base.rb           # シーン共通の基本クラス（継承元）を定義
-│   ├── ending.rb         # ゲーム終了時の演出や処理を定義
-│   └── gameover.rb       # ゲームオーバー時の表示や処理を定義
-│           ︙
-├── bullet.rb             # 弾の挙動や当たり判定を管理するクラス
-├── enemy.rb              # 敵キャラクターの挙動や状態を管理するクラス
-├── ememyspawner.rb       # 敵の出現管理処理を行うクラス
-├── levelmanager.rb       # ステージや難易度の進行管理を行うクラス
-├── player.rb             # プレイヤーキャラクターの動作や状態を管理するクラス
-└── main.rb               # アプリケーションのエントリーポイント（初期化・起動処理）
-							  </pre>
-							  <a href="https://github.com/16hahaha/Recycling_Odyssey" target="_blank">
-								ソースコードはこちら
-							  </a>
+								<h3>System</h3>
+								<p>行燈が光る仕組みを説明します<br>
+
+								<style>
+									/* モーダルの背景 */
+									.modal {
+										display: none; 
+										position: fixed; 
+										z-index: 1000; 
+										left: 0; top: 0; width: 100%; height: 100%; 
+										overflow: auto; 
+										background-color: rgba(0,0,0,0.8); 
+									}
+									
+									/* モーダル画像（中央に完全配置） */
+									.modal-content {
+										position: absolute;
+										top: 50%;
+										left: 50%;
+										transform: translate(-50%, -50%);
+										max-width: 90%;
+										max-height: 80vh;
+										border-radius: 8px;
+									}
+									
+									/* 閉じるボタン */
+									.close {
+										position: absolute;
+										top: 30px; right: 30px;
+										color: white;
+										font-size: 30px;
+										font-weight: bold;
+										cursor: pointer;
+										user-select: none;
+									}
+									</style>
+									
+									
+									<div class="features">
+									<article>
+										<a href="#" class="image modal-trigger">
+										<img src="../images/Pro3_4.jpg" alt="LED行燈" />
+										</a>
+										<div class="inner">
+										<h5>大きな行燈の仕組み</h5>
+										<p>
+											この展示物は、大きな行燈に4つ設置された3軸加速度センサの入力に応じて叩かれた方向を感知し
+											小さな行燈に光り方のパターンを送信することで点灯しています。
+											マイコンをセンサの制御に1つ、LEDに光り方のデータを送信するのに3つ使っています。
+											センサに反応がない時はろうそくの入った行燈を模した光り方をするようになっています。
+										</p>
+										</div>
+									</article>
+									<article>
+										<a href="#" class="image modal-trigger">
+											<img src="../images/Pro3_5.jpg" alt="温度測定実験の結果" />
+										</a>
+										<div class="inner">
+											<h5>概要図</h5>
+											<p>
+												小さな行燈について説明します。小さな行燈にはフルカラーのLEDが3つ搭載されており
+												大きな行燈のマイコンから光り方についてのデータを受信し次の
+												行燈に送ります。行燈は3つのマイコンにそれぞれ12x4個接続されておリ1つのマイコンが
+												48個の行燈を光らせるようになっています。
+											</p>
+										</div>
+										</article>
+									</div>
+									
+									<!-- モーダル本体 -->
+									<div id="modal" class="modal">
+									<span class="close">&times;</span>
+									<img class="modal-content" id="modal-img" />
+									</div>
+									
+									<script>
+									// 画像クリック時にモーダル表示
+									document.querySelectorAll('.modal-trigger img').forEach(img => {
+										img.addEventListener('click', function(e) {
+										e.preventDefault();
+										const modal = document.getElementById('modal');
+										const modalImg = document.getElementById('modal-img');
+										modal.style.display = "block";
+										modalImg.src = this.src;  // クリックした画像のsrcをセット
+										modalImg.alt = this.alt;
+										});
+									});
+									
+									// モーダルの閉じるボタン
+									document.querySelector('.close').addEventListener('click', function() {
+										document.getElementById('modal').style.display = "none";
+									});
+									
+									// モーダルの外側クリックでも閉じる
+									document.getElementById('modal').addEventListener('click', function(e) {
+										if (e.target === this) {
+										this.style.display = "none";
+										}
+									});
+									</script>
+
 							</div>
 						</section>
 
@@ -158,350 +235,20 @@ project-root/
 								<header class="major">
 									<h3>Conclusion</h3>
 								</header>
-								<p>本合宿でのチーム開発にはチームリーダーとして参加した。参加の目的であったRubyおよびDXRubyライブラリを用いたゲームを作成することが達成できた。またプロジェクトを進めるにあたりGithubを用いたバージョン管理についても学習することができた。英語でのディスカッション、開発の経験も積むことができたので非常に実りのある合宿となった。<br>
-									一方作品に目を向けると現段階では様々な改良の余地がある。例えばゴミの種類を増やしたり地区町村によって異なるゴミの分別やゴミ袋の色を学べるような仕組みを取り入れる事が挙げられる。
-									また留学生向けのUIとして多言語向けに改良するなども課題として挙げられる。今後UI、レベルデザインなどの改良に取り組みたい。
-								</p>
-								<a href="https://www.rubycamp.jp/reports/2024-03-09-2024-spring/" target="_blank">
-									Ruby合宿公式サイトはこちら
-								  </a>
+								<p>本企画は学生会のプロジェクトとして実施され、プロジェクトリーダーを務めました。
+									主に基板設計、加速度センサの動作検証、小行燈および
+									制御用マイコン基板の設計・製作を担当しました。
+									プロジェクトを通し、タスクの分担や進捗状況の把握等異なるタスクを行うチームとの
+									コミュニケーションの重要さなどを学ぶことが出来ました。
+									人員の確保など技術的な部分以外の成長が大きかったと感じています。
+									展示は多くの来場者から好評を得ることができ、後に地域の小学校祭りでも展示され、
+									地域住民の方々に楽しんでいただくことができました。
 								</p>
 								<a href="../projects/project2.html" target="_blank">
 									<h6>Next>2Dシューティングゲーム「リサイクルオデッセイ」</h6>
 								  </a>
 							</div>
 						</section>
-
-						<!-- Five -->
-						<!--
-							<section id="five">
-								<div class="container">
-									<h3>Elements</h3>
-
-									<section>
-										<h4>Text</h4>
-										<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-										This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-										This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-										<hr />
-										<header>
-											<h4>Heading with a Subtitle</h4>
-											<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-										</header>
-										<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-										<header>
-											<h5>Heading with a Subtitle</h5>
-											<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-										</header>
-										<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-										<hr />
-										<h2>Heading Level 2</h2>
-										<h3>Heading Level 3</h3>
-										<h4>Heading Level 4</h4>
-										<h5>Heading Level 5</h5>
-										<h6>Heading Level 6</h6>
-										<hr />
-										<h5>Blockquote</h5>
-										<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-										<h5>Preformatted</h5>
-										<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-									</section>
-
-									<section>
-										<h4>Lists</h4>
-										<div class="row">
-											<div class="col-6 col-12-xsmall">
-												<h5>Unordered</h5>
-												<ul>
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Sagittis adipiscing lorem eleifend.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-												</ul>
-												<h5>Alternate</h5>
-												<ul class="alt">
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Sagittis adipiscing lorem eleifend.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-												</ul>
-											</div>
-											<div class="col-6 col-12-xsmall">
-												<h5>Ordered</h5>
-												<ol>
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Etiam vel felis at lorem sed viverra.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Etiam vel felis at lorem sed viverra.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-												</ol>
-												<h5>Icons</h5>
-												<ul class="icons">
-													<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-													<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-													<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-													<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-													<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-													<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
-												</ul>
-											</div>
-										</div>
-										<h5>Actions</h5>
-										<ul class="actions">
-											<li><a href="#" class="button primary">Default</a></li>
-											<li><a href="#" class="button">Default</a></li>
-											<li><a href="#" class="button alt">Default</a></li>
-										</ul>
-										<ul class="actions small">
-											<li><a href="#" class="button primary small">Small</a></li>
-											<li><a href="#" class="button small">Small</a></li>
-											<li><a href="#" class="button alt small">Small</a></li>
-										</ul>
-										<div class="row">
-											<div class="col-3 col-6-medium col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary">Default</a></li>
-													<li><a href="#" class="button">Default</a></li>
-													<li><a href="#" class="button alt">Default</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6 col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary small">Small</a></li>
-													<li><a href="#" class="button small">Small</a></li>
-													<li><a href="#" class="button alt small">Small</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6-medium col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary fit">Default</a></li>
-													<li><a href="#" class="button fit">Default</a></li>
-													<li><a href="#" class="button alt fit">Default</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6-medium col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary small fit">Small</a></li>
-													<li><a href="#" class="button small fit">Small</a></li>
-													<li><a href="#" class="button alt small fit">Small</a></li>
-												</ul>
-											</div>
-										</div>
-									</section>
-
-									<section>
-										<h4>Table</h4>
-										<h5>Default</h5>
-										<div class="table-wrapper">
-											<table>
-												<thead>
-													<tr>
-														<th>Name</th>
-														<th>Description</th>
-														<th>Price</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>Item One</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Two</td>
-														<td>Vis ac commodo adipiscing arcu aliquet.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Three</td>
-														<td> Morbi faucibus arcu accumsan lorem.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Four</td>
-														<td>Vitae integer tempus condimentum.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Five</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-												</tbody>
-												<tfoot>
-													<tr>
-														<td colspan="2"></td>
-														<td>100.00</td>
-													</tr>
-												</tfoot>
-											</table>
-										</div>
-
-										<h5>Alternate</h5>
-										<div class="table-wrapper">
-											<table class="alt">
-												<thead>
-													<tr>
-														<th>Name</th>
-														<th>Description</th>
-														<th>Price</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>Item One</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Two</td>
-														<td>Vis ac commodo adipiscing arcu aliquet.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Three</td>
-														<td> Morbi faucibus arcu accumsan lorem.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Four</td>
-														<td>Vitae integer tempus condimentum.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Five</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-												</tbody>
-												<tfoot>
-													<tr>
-														<td colspan="2"></td>
-														<td>100.00</td>
-													</tr>
-												</tfoot>
-											</table>
-										</div>
-									</section>
-
-									<section>
-										<h4>Buttons</h4>
-										<ul class="actions">
-											<li><a href="#" class="button primary">Primary</a></li>
-											<li><a href="#" class="button">Default</a></li>
-											<li><a href="#" class="button alt">Alternate</a></li>
-										</ul>
-										<ul class="actions">
-											<li><a href="#" class="button primary large">Large</a></li>
-											<li><a href="#" class="button">Default</a></li>
-											<li><a href="#" class="button alt small">Small</a></li>
-										</ul>
-										<ul class="actions fit">
-											<li><a href="#" class="button primary fit">Fit</a></li>
-											<li><a href="#" class="button fit">Fit</a></li>
-											<li><a href="#" class="button alt fit">Fit</a></li>
-										</ul>
-										<ul class="actions fit small">
-											<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-											<li><a href="#" class="button fit small">Fit + Small</a></li>
-											<li><a href="#" class="button alt fit small">Fit + Small</a></li>
-										</ul>
-										<ul class="actions">
-											<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-											<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-											<li><a href="#" class="button alt icon solid fa-check">Icon</a></li>
-										</ul>
-										<ul class="actions">
-											<li><span class="button primary disabled">Primary</span></li>
-											<li><span class="button disabled">Default</span></li>
-											<li><span class="button alt disabled">Alternate</span></li>
-										</ul>
-									</section>
-
-									<section>
-										<h4>Form</h4>
-										<form method="post" action="#">
-											<div class="row gtr-uniform">
-												<div class="col-6 col-12-xsmall">
-													<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-												</div>
-												<div class="col-6 col-12-xsmall">
-													<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-												</div>
-												<div class="col-12">
-													<select name="demo-category" id="demo-category">
-														<option value="">- Category -</option>
-														<option value="1">Manufacturing</option>
-														<option value="1">Shipping</option>
-														<option value="1">Administration</option>
-														<option value="1">Human Resources</option>
-													</select>
-												</div>
-												<div class="col-4 col-12-medium">
-													<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-													<label for="demo-priority-low">Low Priority</label>
-												</div>
-												<div class="col-4 col-12-medium">
-													<input type="radio" id="demo-priority-normal" name="demo-priority">
-													<label for="demo-priority-normal">Normal Priority</label>
-												</div>
-												<div class="col-4 col-12-medium">
-													<input type="radio" id="demo-priority-high" name="demo-priority">
-													<label for="demo-priority-high">High Priority</label>
-												</div>
-												<div class="col-6 col-12-medium">
-													<input type="checkbox" id="demo-copy" name="demo-copy">
-													<label for="demo-copy">Email me a copy of this message</label>
-												</div>
-												<div class="col-6 col-12-medium">
-													<input type="checkbox" id="demo-human" name="demo-human" checked>
-													<label for="demo-human">I am a human and not a robot</label>
-												</div>
-												<div class="col-12">
-													<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-												</div>
-												<div class="col-12">
-													<ul class="actions">
-														<li><input type="submit" value="Send Message" /></li>
-														<li><input type="reset" value="Reset" class="alt" /></li>
-													</ul>
-												</div>
-											</div>
-										</form>
-									</section>
-
-									<section>
-										<h4>Image</h4>
-										<h5>Fit</h5>
-										<span class="image fit"><img src="images/banner.jpg" alt="" /></span>
-										<div class="box alt">
-											<div class="row gtr-50 gtr-uniform">
-												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-											</div>
-										</div>
-										<h5>Left &amp; Right</h5>
-										<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-										<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-									</section>
-
-								</div>
-							</section>
-						-->
 
 					</div>
 
